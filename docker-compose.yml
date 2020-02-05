@@ -3,8 +3,6 @@ version: '3.3'
 services:
   db:
     image: mysql:5.7
-    volumes:
-      - ./db/wordpress:/var/lib/mysql/wordpress
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: somewordpress
